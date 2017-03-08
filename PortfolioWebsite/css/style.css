@@ -15,6 +15,17 @@ body {
 	color: #222;
 }
 
+/* Grid
+********************************************************************* */  
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
 /* Media Queries
 ********************************************************************* */  
 
@@ -51,7 +62,6 @@ h6 {
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
     top: 50px;
 }
-
 /* Links
 ********************************************************************* */
 a {
@@ -185,6 +195,52 @@ transform:translate(0, 10px) rotate(45deg);
 opacity: 0;
 }
 }
+.main_nav {
+	position: fixed;
+	top: 0px;
+	max-height: 50px;
+	z-index: 999;
+	width: 100%;
+	padding-top: 17px;
+	background: none;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	opacity: 0;
+	top: -100px;
+	padding-bottom: 6px;
+}
+.open-nav {
+	max-height: 400px !important;
+}
+.sticky {
+	background-color: #ffffff;
+	opacity: 1;
+	top: 0px;
+}
+nav {
+	width: 100%;
+	margin-top: 5px;
+}
+nav ul {
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
+}
+nav ul a {
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+}
+nav ul a:hover {
+	color: #CFCFCF;
+}
+nav ul li {
+	display: inline-block;
+	margin-left: 35px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
 
 /* About Section
 ********************************************************************* */
@@ -223,7 +279,23 @@ footer {
 
 /* Lists
 ********************************************************************* */
-
+ul {
+	list-style: circle inside;
+}
+ol {
+	list-style: decimal inside;
+}
+ol, ul {
+	padding-left: 0;
+	margin-top: 0;
+}
+ul ul, ul ol, ol ol, ol ul {
+	margin: 1.5rem 0 1.5rem 3rem;
+	font-size: 90%;
+}
+li {
+	margin-bottom: 1rem;
+}
 /* Misc
 ********************************************************************* */
 
