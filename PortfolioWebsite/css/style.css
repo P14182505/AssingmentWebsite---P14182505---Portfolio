@@ -80,6 +80,11 @@ header {
   	perspective: 1px;
   	transition: all .8s ease-in-out;
 }
+.profile-image:hover {
+	-ms-transform: rotate(360deg) scale(1);
+	-webkit-transform: rotate(360deg) scale(1);
+	transform: rotate(360deg) scale(1);
+}
 .title {
 	-webkit-align-self: center;
 	-ms-flex-item-align: center;
