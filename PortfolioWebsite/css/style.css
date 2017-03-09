@@ -564,6 +564,70 @@ nav ul li {
 ********************************************************************* */
 #experiences {
 	padding: 100px 0 100px 0;
+	background-color: #F5F5F5;
+}
+*{
+	margin: 0;
+	padding: 0;
+  	box-sizing: flex-box;
+    -moz-box-sizing: flex-box;
+    -webkit-box-sizing: flex-box;
+}
+.gallery{
+  	margin: 0;
+  	padding: 0;
+  	height: 100%;
+}
+[class*='thumbnail-']{
+  	background: #F5F5F5;
+  	width: 33.33%;
+  	float: left;
+  	cursor: zoom-in;
+  	height: 200px;
+}
+[class*='thumbnail-'] img{
+  	max-width: 100%;
+}
+[class*='large-']{
+  	width: 90%;
+  	display: none;
+}
+[class*='large-'] img{
+  	width: 100%;
+  	max-width: 100%;
+}
+.close{
+  	color: #f9a42c;
+  	font-size: 30px;
+  	position: relative;
+  	top: 5px;
+  	right: 10px;
+  	float: right;
+  	cursor: zoom-out;
+}
+[class*='thumbnail-']{
+  	overflow: hidden;
+  	padding: 0;
+  	position: relative;
+  	cursor: zoom-in;
+}
+[class*='thumbnail-']:hover img{
+  	transition: .3s linear;
+  	transition-delay: 300ms;
+  	transform: /* rotate(5deg) */ scale(1.4);
+}
+[class*='thumbnail-'] > .caption{
+  	display: none;
+  	position: absolute;
+  	bottom: 0;
+  	padding: 15px;
+  	width: 100%;
+  	background-color: #f9a42c;
+  	color: white;
+  	opacity: 0.8;
+}
+[class*='thumbnail-']:hover > .caption{
+  	display: block;
 }
 
 /* Contact Section
