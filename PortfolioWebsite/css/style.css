@@ -25,7 +25,59 @@ body {
 	padding: 0 20px;
 	box-sizing: border-box;
 }
-
+.column, .columns {
+	width: 100%;
+	float: left;
+	box-sizing: flex-box;
+}
+@media (min-width: 550px) {
+.container {
+	width: 80%;
+}
+.column,  .columns {
+	margin-left: 4%;
+}
+.column:first-child,  .columns:first-child {
+	margin-left: 0;
+}
+.one.column,  .one.columns {
+	width: 4%;
+}
+.six.columns {
+	width: 48%;
+}
+.eight.columns {
+	width: 65%;
+}
+.nine.columns {
+	width: 74%;
+}
+.eleven.columns {
+	width: 91%;
+}
+.one-third.column {
+	width: 30%;
+}
+/* Offsets */
+.offset-by-one.column,  .offset-by-one.columns {
+	margin-left: 8%;
+}
+.offset-by-six.column,  .offset-by-six.columns {
+	margin-left: 52%;
+}
+.offset-by-eight.column,  .offset-by-eight.columns {
+	margin-left: 69%;
+}
+.offset-by-nine.column,  .offset-by-nine.columns {
+	margin-left: 78%;
+}
+.offset-by-eleven.column,  .offset-by-eleven.columns {
+	margin-left: 95%;
+}
+.offset-by-one-third.column,  .offset-by-one-third.columns {
+	margin-left: 34%;
+}
+}
 /* Media Queries
 ********************************************************************* */  
 
@@ -48,10 +100,19 @@ h2 {
 	
 }
 h3 {
+	font-size: 3.0rem;
+	line-height: 1.3;
+	letter-spacing: -.1rem;
 }
 h4 {
+	font-size: 2.4rem;
+	line-height: 1.35;
+	letter-spacing: -.08rem;
 }
 h5 {
+	font-size: 2.6rem;
+	line-height: 1.5;
+	letter-spacing: -.1rem;
 }
 h6 {
 	font-size: 1.5rem;
@@ -70,6 +131,13 @@ a {
 }
 a:hover {
 	color: #fff;
+}
+.download {
+	color: #f9a42c;
+	text-decoration: none;
+}
+.download:hover {
+	color: #CFCFCF;
 }
 
 /* Header Section
@@ -296,6 +364,20 @@ ul ul, ul ol, ol ol, ol ul {
 li {
 	margin-bottom: 1rem;
 }
+/* Clearing
+********************************************************************* */
+.container:after, .row:after, .u-cf {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /* Misc
 ********************************************************************* */
+.block {
+	width: 70px;
+	height: 2px;
+	background: #f9a42c; 
+	margin-bottom: 50px;
+}
 
