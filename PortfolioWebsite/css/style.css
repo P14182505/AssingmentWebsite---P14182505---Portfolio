@@ -680,6 +680,16 @@ input[type="submit"]:hover {
 /* Footer Section
 ********************************************************************* */
 footer {
+	min-height: 120px;
+	padding: 40px 0 40px 0;
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
+	url("../images/background3.jpg") no-repeat fixed center;
+	background-size: cover;
+	box-sizing: border-box;
+}
+footer p {
+	color: #FFFFFF;
+	margin: 20px 0 0 0;
 }
 
 /* Spacing
