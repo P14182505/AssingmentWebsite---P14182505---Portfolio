@@ -1,6 +1,7 @@
 /* Imports
 ********************************************************************* */
 @import url('https://fonts.googleapis.com/css?family=Hind+Vadodara');
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
 
 /* Base Styles
 ********************************************************************* */
@@ -315,6 +316,155 @@ nav ul li {
 #aboutme {
 	padding: 100px 0 50px 0;
 }
+.social-icons {
+ 	margin: 0 0 1em;
+}
+.social-icons a {
+  	font-family: "FontAwesome";
+  	position: relative;
+  	padding: 0 0 0 1em;
+  	font-size: 4em;
+  	margin: 0 .1em 0 0;
+}
+.social-icons a i {
+  	position: absolute;
+  	overflow: hidden;
+  	clip: rect(0 0 0 0);
+  	height: 1px;
+  	width: 1px;
+  	margin: -1px;
+  	padding: 0;
+  	border: 0;
+}
+.social-icons a:after {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	font-size: 75%;
+}
+.social-icons a.twitter {
+  	color: #45B0E3;
+  	background: #45B0E3;
+}
+.social-icons a.twitter:after {
+  	content: '\f099';
+  	top: .2em;
+  	left: .2em;
+  	color: #fff;
+}
+.social-icons a.facebook {
+  	color: #39599F;
+  	background: #39599F;
+}
+.social-icons a.facebook:after {
+  	top: .2em;
+  	left: .44em;
+  	content: '\f09a';
+  	color: #fff;
+}
+.social-icons a.google-plus {
+  	color: #DD4B39;
+  	background: #DD4B39;
+}
+.social-icons a.google-plus:after {
+  	top: .2em;
+  	left: .3em;
+  	content: '\f0d5';
+  	font-size: 70%;
+  	color: #fff;
+}
+.social-icons a.linked-in {
+  	color: #1883BC;
+  	background: #1883BC;
+}
+.social-icons a.linked-in:after {
+  	top: .2em;
+  	left: .3em;
+  	content: '\f0e1';
+  	font-size: 70%;
+  	color: #fff;
+}
+.social-icons a.github {
+  	color: #555;
+  	background: #555;
+}
+.social-icons a.github:after {
+  	top: .24em;
+  	left: .3em;
+  	content: '\f09b';
+  	font-size: 70%;
+  	color: #fff;
+}
+.social-icons a.pinterest {
+  	color: #CB2028;
+  	background: #CB2028;
+}
+.social-icons a.pinterest:after {
+  	top: .2em;
+  	left: .3em;
+  	content: '\f0d2';
+  	font-size: 70%;
+  	color: #fff;
+}
+.social-icons a.instagram {
+  	color: #614236;
+  	background: #614236;
+}
+.social-icons a.instagram:after {
+  	top: .3em;
+  	left: .33em;
+  	content: '\f16d';
+  	font-size: 65%;
+  	color: #fff;
+}
+.social-icons a:hover.twitter {
+  	background: #209bd5;
+}
+.social-icons a:hover.facebook {
+  	background: #2c4479;
+}
+.social-icons a:hover.google-plus {
+  	background: #c23321;
+}
+.social-icons a:hover.linked-in {
+  	background: #12638f;
+}
+.social-icons a:hover.github {
+  	background: #3c3c3c;
+}
+.social-icons a:hover.pinterest {
+  	background: #9f191f;
+}
+.social-icons a:hover.instagram {
+  	background: #402c24;
+}
+.social-icons[data-type="rounded"] a {
+  	border-radius: 20em;
+}
+.social-icons[data-gradient="linear"] a.facebook {
+  	background: linear-gradient(#39599F, #1e2f54);
+}
+.social-icons[data-gradient="linear"] a.facebook:hover {
+  	background: #39599F;
+}
+.social-icons[data-gradient="linear"] a.google-plus {
+  	background: linear-gradient(#DD4B39, #96271a);
+}
+.social-icons[data-gradient="linear"] a.google-plus:hover {
+  	background: #DD4B39;
+}
+.social-icons[data-gradient="linear"] a.linked-in {
+  	background: linear-gradient(#1883BC, #0c4462);
+}
+.social-icons[data-gradient="linear"] a.linked-in:hover {
+  	background: #1883BC;
+}
+.social-icons[data-gradient="linear"] a.github {
+  	background: linear-gradient(#555, #222222);
+}
+.social-icons[data-gradient="linear"] a.github:hover {
+  	background: #555;
+}
 
 /* Qualification Section
 ********************************************************************* */
@@ -374,6 +524,10 @@ li {
 
 /* Misc
 ********************************************************************* */
+.icon {
+	padding-right: 10px;
+	color: #f9a42c;
+}
 .block {
 	width: 70px;
 	height: 2px;
